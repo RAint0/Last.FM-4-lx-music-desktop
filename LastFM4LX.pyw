@@ -8,6 +8,10 @@ import datetime
 import time
 import webbrowser
 from win11toast import toast
+import tendo.singleton
+
+# 🔒 确保只有一个程序实例在运行
+single = tendo.singleton.SingleInstance()
 
 # ⛔ 这里的API_KEY和API_SECRET仅仅是示例，你需要替换为你自己Last.FM的API_KEY和API_SECRET
 # 🔑 申请地址： https://www.last.fm/api/account/create
