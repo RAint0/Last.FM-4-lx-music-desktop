@@ -8,8 +8,8 @@ import datetime
 import time
 import webbrowser
 from win11toast import toast
-import tendo.singleton
 
+import tendo.singleton
 # 🔒 确保只有一个程序实例在运行
 single = tendo.singleton.SingleInstance()
 
@@ -63,7 +63,7 @@ duration = 0
 collect = False
 status = ""
 start_time = -1
-
+toast("Start","LastFM4LX") # 📣 弹出通知
 # 🎸 这里是scrobbling的逻辑，当切歌或LX_Music软件退出时，会调用scrobbling函数
 def scrobbling(track,playDuration,duration,status,start_time):
     # 🎤 如果track不为空，说明有歌曲正在播放
@@ -78,7 +78,6 @@ def scrobbling(track,playDuration,duration,status,start_time):
         if duration>=30 and playDuration >= duration/2 or playDuration >= 240:
             print("playDuration:",playDuration," duration:",duration)
             print("!!! Scrobbling", track.artist, "-", track.title, flush=True)
-            toast("Scrobbling", track.artist+"-"+track.title) # 📣 弹出通知
             scrobbleResult=network.scrobble(track.artist, track.title, int(time.mktime(datetime.datetime.now().timetuple())))
 
 try:
@@ -94,7 +93,6 @@ try:
         elif event.event == "duration":
             if data > 30:
                 duration = data
-            print("@duration:",duration , type(data))
         elif event.event == "collect":
             collect = data
         elif event.event == "status":
@@ -130,8 +128,7 @@ try:
 
                 # ▶️ 记录为正在播放  
                 playingResult=network.update_now_playing(singer, name)
-                # print("!!! Playing", singer, "-" , name, flush=True)
-                toast("Playing", singer+"-"+name) # 📣 弹出通知
+                print("!!! Playing", singer, "-" , name, flush=True)
                 # print("start_time:",start_time)
             elif status != "playing" and start_time!=-1:
                 # ⏹️ 暂停或异常时，累计一次播放时间
