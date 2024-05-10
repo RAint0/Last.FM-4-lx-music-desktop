@@ -1,7 +1,7 @@
 <p align="center"><a href="https://github.com/RAint0/Last.FM-4-lx-music-desktop"><img width="200" src="https://github.com/RAint0/Last.FM-4-lx-music-desktop/blob/main/logo.png" alt="lx-music logo"></a></p>
 <p align="center">
-  <a href="https://github.com/lyswhut/lx-music-desktop/releases"><img src="https://img.shields.io/github/release/RAint0/Last.FM-4-lx-music-desktop" alt="Release version"></a>
-  <a href="https://github.com/lyswhut/lx-music-desktop/releases"><img src="https://img.shields.io/badge/pyLast-v5.2.0%2B-blue" alt="pyLast version"></a>
+  <a href="https://github.com/RAint0/Last.FM-4-lx-music-desktop"><img src="https://img.shields.io/github/release/RAint0/Last.FM-4-lx-music-desktop" alt="Release version"></a>
+  <a href="https://github.com/pylast/pylast"><img src="https://img.shields.io/badge/pyLast-v5.2.0%2B-blue" alt="pyLast version"></a>
   <a href="https://github.com/lyswhut/lx-music-desktop/releases"><img src="https://img.shields.io/badge/LX_Music-v2.7.0%2B-blue" alt="LX version"></a>
   <a href="https://github.com/RAint0/Last.FM-4-lx-music-desktop/"><img src="https://img.shields.io/github/downloads/RAint0/Last.FM-4-lx-music-desktop/latest/total" alt="Downloads"></a>
   <a href="https://github.com/RAint0/Last.FM-4-lx-music-desktop/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-green" alt="License"></a>
