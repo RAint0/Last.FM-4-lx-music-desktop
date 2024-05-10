@@ -77,7 +77,7 @@ def scrobbling(track,playDuration,duration,status,start_time):
         # 🦖 只有当音乐时长至少30s,且播放时间至少为时长的一半或播放时长超过4分钟才记录
         if duration>=30 and playDuration >= duration/2 or playDuration >= 240:
             print("playDuration:",playDuration," duration:",duration)
-            print("!!! Scrobbling", rack.artist, "-", track.title, flush=True)
+            print("!!! Scrobbling", track.artist, "-", track.title, flush=True)
             toast("Scrobbling", track.artist+"-"+track.title) # 📣 弹出通知
             scrobbleResult=network.scrobble(track.artist, track.title, int(time.mktime(datetime.datetime.now().timetuple())))
 
