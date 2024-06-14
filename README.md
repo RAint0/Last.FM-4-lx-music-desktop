@@ -21,7 +21,7 @@ last.FM是一个强大的音乐网站，可以为你记录听过的音乐并和�
 2. 申请API_KEY和API_SECRET，申请地址：[https://www.last.fm/api/account/create](https://www.last.fm/api/account/create) 
 3. 替换LastFM4LX.pyw中的API_KEY和API_SECRET。
 4. 通过pip install 按照所需要的环境
-5. 先启动洛雪音乐助手，再运行pyw脚本（python的无窗口运行，需要用pythonw）
+5. 先启动洛雪音乐助手并在设置中打开api，再运行pyw脚本（python的无窗口运行，需要用pythonw）
 
 ## 进阶 
 1. 使用VBS脚本一键启动洛雪音乐助手并运行脚本，例子在start.vbs
